@@ -1,0 +1,171 @@
+:root {
+  --background: #f0f0f0;
+  --foreground: #171717;
+  --sectionheader:rgb(15 43 86);
+  --redcolor:rgb(239 65 64);
+
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  /* color: var(--foreground); */
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.Dela_Gothic_One{
+  font-family: var(--font-kablammo);
+  color: white;
+  text-align: center;
+  font-size: 90px;
+  margin: 0;
+}
+@media (max-width:576px) {
+  .Dela_Gothic_One{
+font-size: 60px !important;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+p{
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+.home{
+  background-image: url('./R.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 68px);
+  margin-top: 68px;
+position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000c7;
+  right: 0;
+  z-index: 0;
+}
+.nav-link{
+  color: rgb(15 43 86);
+  font-weight: bold !important;
+}
+.navbar-nav .nav-link.active {
+  color: inherit;
+}.dropdown-item.active, .dropdown-item:active {
+  color: inherit;
+  background-color: inherit;
+}
+
+.nav-link:focus, .nav-link:hover {
+  color: var(--redcolor)  !important;
+}
+.section-header{
+  font-weight: bold;
+  color: var(--sectionheader);
+  font-size: 50px;
+}
+
+.section-subtitle{
+  color: var(--sectionheader);
+  font-weight: 600;
+  font-size: 19px;
+  letter-spacing: 4px;
+}
+
+@media (max-width:600px) {
+  .section-header{
+font-size: 35px;
+  }
+  .section-subtitle{
+font-size: 17px;
+  }
+}
+/* service section*/
+.service-num{
+  color: var(--redcolor);
+  font-weight: 600;
+  font-size: 45px;
+}
+.service-num-span{
+  color: var(--sectionheader);
+  font-weight: 600;
+}
+.service-p{
+  font-weight: 900 !important;
+  color: var(--sectionheader) !important;
+  font-size: 20px !important;
+  font-family: inherit;
+}
+.service-span{
+  color: #7d7d7d;
+  margin-top: 10px;
+}
+.cercel{
+  position: relative;
+}
+.cercel::after{
+  content: '';
+  position: absolute;
+  border: 1px solid var(--sectionheader);
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+/* .cercel-left::before{
+  content: '';
+  position: absolute;
+  border: 1px solid red;
+  top: 50%;
+  right: 100%;
+  width: 100%;
+} */
+
+/* about */
+
+.about{
+  /* background-image: url('../app/about/400kv-Steel-Power-Transmission-Tower.jpg');
+  background-repeat: no-repeat;
+  background-size: contain; */
+  /* height:calc( 100vh - 68px); */
+  margin-top: 68px ;
+  background-color: rgb(238 238 238);
+}
+.about-h4{
+  font-weight: bold;
+  color: var(--sectionheader);
+  padding:  10px 0;
+  margin: 0; 
+}
