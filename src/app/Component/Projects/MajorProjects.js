@@ -6,7 +6,6 @@ import Grid from '@mui/material/Grid2';
 import { Zoom } from 'react-awesome-reveal';
 
 function MajorProjects() {
-    console.log(Data.MajorProjects)
     return (
         <div >
             <Container>
