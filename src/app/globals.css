@@ -47,9 +47,7 @@ body {
   margin: 0;
 }
 
-/* .up {
-  display: none !important;
-} */
+
 
 .up:hover {
   opacity: 1 !important;
