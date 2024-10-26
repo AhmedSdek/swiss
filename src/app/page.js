@@ -3,7 +3,6 @@ import { Container, Stack } from "@mui/material";
 import Services from "./Component/Services/Services";
 import MajorProjects from "./Component/Projects/MajorProjects";
 import OutSideEgypt from "./Component/Projects/OutSideEgypt";
-import im from './Component/Nav/remove.photos-removed-background.png'
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 export default function Home() {

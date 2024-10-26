@@ -1,9 +1,15 @@
 'use client'
 import { ArrowDropUpOutlined } from "@mui/icons-material"
 import { IconButton } from "@mui/material"
+import { useEffect } from "react";
 
 function Up() {
-    window.onscroll = function () { myFunction() };
+    useEffect(() => {
+        window.addEventListener("scroll", myFunction, { passive: true, capture: true });
+        return () => {
+            window.removeEventListener("scroll", myFunction);
+        }
+    }, []);
     function myFunction() {
         if (window.scrollY > 150) {
             document.getElementById("up").style.scale = '1';

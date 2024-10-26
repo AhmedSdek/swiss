@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import { Kablammo, Sixtyfour, Dela_Gothic_One, Press_Start_2P } from 'next/font/google'
+import { Dela_Gothic_One, Press_Start_2P } from 'next/font/google'
 import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./Component/Nav/NavBar";
