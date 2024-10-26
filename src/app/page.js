@@ -10,7 +10,7 @@ export default function Home() {
   const [typingStatus, setTypingStatus] = useState('Initializing');
 
   return (
-    < >
+    <div>
       <div className="home">
         <Container>
           <Stack sx={{ position: 'relative', zIndex: '2', justifyContent: 'center', height: 'calc(100vh - 68px )', alignItems: 'center' }}>
@@ -60,6 +60,6 @@ export default function Home() {
       <Services />
       <MajorProjects />
       <OutSideEgypt />
-    </>
+    </div>
   );
 }

@@ -1,6 +1,7 @@
 
 import { Container, IconButton, Stack, Typography } from '@mui/material';
 import { Col } from 'react-bootstrap';
+import Up from '../Up';
 
 
 function Footer() {
@@ -76,6 +77,7 @@ function Footer() {
                     </Stack>
                 </Container>
             </Stack>
+            <Up />
         </footer>
 
     )
