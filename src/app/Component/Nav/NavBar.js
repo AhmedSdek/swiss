@@ -11,25 +11,25 @@ function NavBar() {
                 </Navbar.Brand>
                 <Navbar.Toggle id="navbar-toggler" aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll" style={{ justifyContent: 'center' }} >
-                    <Nav >
+                    <Nav style={{ color: 'rgb(15 43 86)' }}>
                         <Nav.Link as={Link} eventKey='0' href='/' >
                             Home
                         </Nav.Link>
                         <NavDropdown title="About Us" id="basic-nav-dropdown">
-                            <NavDropdown.Item as={Link} eventKey='0' href="/">
+                            <NavDropdown.Item as={Link} eventKey='0' href="/Teams">
                                 Teams
                             </NavDropdown.Item>
-                            <NavDropdown.Item as={Link} eventKey='0' href="/">Certificates</NavDropdown.Item>
-                            <NavDropdown.Item as={Link} eventKey='0' href="/">Agencies & Clients</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} eventKey='0' href="/Certificates">Certificates</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} eventKey='0' href="/Agencies">Agencies & Clients</NavDropdown.Item>
                         </NavDropdown>
 
                         <Nav.Link as={Link} eventKey='0' href='/#services' >
                             Services
                         </Nav.Link>
-                        <Nav.Link as={Link} eventKey='0' href='/' >
+                        <Nav.Link as={Link} eventKey='0' href='/Projects' >
                             Projects
                         </Nav.Link>
-                        <Nav.Link as={Link} eventKey='0' href='/' >
+                        <Nav.Link as={Link} eventKey='0' href='/Products' >
                             Products
                         </Nav.Link>
                         <Nav.Link as={Link} eventKey='0' href='/#contact' >

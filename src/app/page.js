@@ -5,6 +5,8 @@ import MajorProjects from "./Component/Projects/MajorProjects";
 import OutSideEgypt from "./Component/Projects/OutSideEgypt";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
+import AboutUsHome from "./Component/Abouthome/AboutUsHome";
+import { ArrowForward, ArrowForwardIosOutlined } from "@mui/icons-material";
 
 export default function Home() {
   const [typingStatus, setTypingStatus] = useState('Initializing');
@@ -28,6 +30,7 @@ export default function Home() {
               </p>
               <Button variant="contained" sx={{ backgroundColor: '#B31319', fontWeight: 'bold', padding: '15px', borderRadius: '10px', letterSpacing: '3px' }}>
                 Our Services
+                <ArrowForwardIosOutlined />
               </Button>
             </Stack>
 
@@ -64,6 +67,7 @@ export default function Home() {
         </Stack>
         <div className="overlay"></div>
       </div>
+      <AboutUsHome />
       <Services />
       <MajorProjects />
       <OutSideEgypt />
