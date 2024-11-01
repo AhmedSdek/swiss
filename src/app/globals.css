@@ -25,6 +25,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 .Dela_Gothic_One {
@@ -68,12 +69,12 @@ ul {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    /* color-scheme: dark; */
   }
 }
 
 .home {
-  background-image: url('./R.jpeg');
+  background-image: url('./construction-works-frankfurt-downtown-germany-1-1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +83,7 @@ ul {
   position: relative;
 }
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   height: 100%;
@@ -90,7 +91,7 @@ ul {
   background-color: #000000c7;
   right: 0;
   z-index: 0;
-}
+} */
 
 .nav-link {
   color: rgb(15 43 86);

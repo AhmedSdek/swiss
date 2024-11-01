@@ -15,22 +15,23 @@ function NavBar() {
                         <Nav.Link as={Link} eventKey='0' href='/' >
                             Home
                         </Nav.Link>
-                        <Nav.Link as={Link} eventKey='0' href='/about' >
-                            About Us
-                        </Nav.Link>
+                        <NavDropdown title="About Us" id="basic-nav-dropdown">
+                            <NavDropdown.Item as={Link} eventKey='0' href="/">
+                                Teams
+                            </NavDropdown.Item>
+                            <NavDropdown.Item as={Link} eventKey='0' href="/">Certificates</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} eventKey='0' href="/">Agencies & Clients</NavDropdown.Item>
+                        </NavDropdown>
+
                         <Nav.Link as={Link} eventKey='0' href='/#services' >
                             Services
                         </Nav.Link>
-                        <NavDropdown title=" Our Projects" id="basic-nav-dropdown">
-                            {/* <NavDropdown.Item href="/All Projects">All Projects</NavDropdown.Item> */}
-                            <NavDropdown.Item as={Link} eventKey='0' href="/#majorprojects">
-                                Major Projects
-                            </NavDropdown.Item>
-                            <NavDropdown.Item as={Link} eventKey='0' href="/#projectoutsideegypt">Project Outside Egypt</NavDropdown.Item>
-                        </NavDropdown>
-                        {/* <Nav.Link href='/clients' >
-                            Our Clients
-                        </Nav.Link> */}
+                        <Nav.Link as={Link} eventKey='0' href='/' >
+                            Projects
+                        </Nav.Link>
+                        <Nav.Link as={Link} eventKey='0' href='/' >
+                            Products
+                        </Nav.Link>
                         <Nav.Link as={Link} eventKey='0' href='/#contact' >
                             Contact Us
                         </Nav.Link>
