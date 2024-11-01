@@ -22,7 +22,6 @@ function NavBar() {
                             <NavDropdown.Item as={Link} eventKey='0' href="/Certificates">Certificates</NavDropdown.Item>
                             <NavDropdown.Item as={Link} eventKey='0' href="/Agencies">Agencies & Clients</NavDropdown.Item>
                         </NavDropdown>
-
                         <Nav.Link as={Link} eventKey='0' href='/#services' >
                             Services
                         </Nav.Link>
