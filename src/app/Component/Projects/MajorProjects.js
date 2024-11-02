@@ -1,61 +1,88 @@
 'use client'
-import { Button, Container, Stack, Typography } from '@mui/material'
+import { Button, Card, CardActions, CardContent, CardMedia, Container, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { Data } from '../Data/Data'
 import Grid from '@mui/material/Grid2';
 import { Zoom } from 'react-awesome-reveal';
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+// import './styles.css';
+import { Autoplay, Navigation } from 'swiper/modules';
 function MajorProjects() {
     return (
         <div >
             <Container>
                 <div id='majorprojects' style={{ paddingTop: '68px' }}>
-                    <div>
+                    <Stack sx={{ justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
                         <h2 className="section-header">
                             Major Projects
                         </h2>
-                        <p className="section-subtitle">
-                            STRATEGIC PROJECTS
+                        <p style={{ color: "#7d7d7d" }}>
+                            We take pride in the diverse array of projects we have successfully completed across various sectors. Each project reflects our commitment to quality, innovation, and client satisfaction. Below is a selection of notable projects that showcase our expertise and dedication to delivering excellence.
                         </p>
-                    </div>
-                    <Stack sx={{ gap: 2, padding: '15px 0' }}>
-                        {Data.MajorProjects.map((project) => {
+                    </Stack>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={10}
+                        loop={true}
+                        navigation={true}
+                        centeredSlides={true}
+                        // pagination={{
+                        //     clickable: true,
+                        // }}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        modules={[Autoplay, Navigation]}
+                        className="mySwiper"
+                    >
+                        {Data.MajorProjects.map((project, index) => {
                             return (
-                                <Zoom key={project.id}>
-                                    <Grid container spacing={2} sx={{ flexDirection: 'row' }}>
-                                        <Grid sx={{ maxWidth: { md: '250px' }, maxHeight: { md: '200px' } }} size={{ xs: 12, sm: 5, md: 4, lg: 2 }} >
-                                            <img style={{ width: '100%', height: '100%' }} src={project.img.src} alt={project.title} />
-                                        </Grid>
-                                        <Grid size={{ xs: 12, sm: 7, md: 8, lg: 10 }} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', border: `3px solid ${project.color}`, padding: '10px', flex: 'auto !important' }}>
-                                            <Typography sx={{ fontWeight: 'bold', color: 'rgb(15 43 86)', fontSize: '20px', letterSpacing: '4px' }} component='p'>
+                                <SwiperSlide key={index}>
+                                    <Card sx={{ maxWidth: 345 }}>
+                                        <CardMedia
+                                            sx={{ height: 200 }}
+                                            image={project.img.src}
+                                            title={project.title}
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="div">
                                                 {project.title}
                                             </Typography>
-                                            <Typography component='span'>
+                                            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                                                 {project.subtitle}
                                             </Typography>
-                                            <ul>
-                                                {project.ul.map((li, index) => {
-                                                    return (
-                                                        <li key={index}>
-                                                            <strong>
-                                                                {li.strong} : &nbsp;
-                                                            </strong>
-                                                            {li.span}
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>
-                                        </Grid>
-                                    </Grid>
-                                </Zoom>
+                                        </CardContent>
+                                        <CardActions>
+                                            <Button size="small" sx={{ color: '#B31319', fontWeight: 'bold' }}>Read More</Button>
+                                        </CardActions>
+                                    </Card>
+                                </SwiperSlide>
                             )
                         })}
-                    </Stack>
-                    {/* <Stack sx={{ justifyContent: 'center', alignItems: 'center' }}>
-                        <Button sx={{ width: '80px', fontWeight: 'bold', lineHeight: 'normal', padding: '10px' }} variant='outlined'>
-                            More
+                    </Swiper>
+                    <Stack sx={{ justifyContent: 'center', alignItems: 'center', marginTop: '30px' }}>
+                        <Button sx={{ width: 'fit-content', fontWeight: 'bold', backgroundColor: '#B31319' }} variant='contained'>
+                            Show All Projects
                         </Button>
-                    </Stack> */}
+                    </Stack>
                 </div>
             </Container>
         </div>

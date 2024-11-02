@@ -46,6 +46,77 @@ export const Data = {
                     span: 'EDEC'
                 },
             ]
+        },
+        {
+            id: '2',
+            img: hospital,
+            title: 'SHARM EL SHEIKH INTERNATIONAL HOSPITAL',
+            subtitle: 'BMS, DDC, MCC, VSD',
+            color: col2,
+            ul: [
+                {
+                    strong: 'Location',
+                    span: 'Sharm El Sheikh'
+                },
+                {
+                    strong: 'Consultant',
+                    span: 'EDEC'
+                },
+            ]
+        }
+        ,
+        {
+            id: '2',
+            img: hospital,
+            title: 'SHARM EL SHEIKH INTERNATIONAL HOSPITAL',
+            subtitle: 'BMS, DDC, MCC, VSD',
+            color: col2,
+            ul: [
+                {
+                    strong: 'Location',
+                    span: 'Sharm El Sheikh'
+                },
+                {
+                    strong: 'Consultant',
+                    span: 'EDEC'
+                },
+            ]
+        }
+        ,
+        {
+            id: '2',
+            img: hospital,
+            title: 'SHARM EL SHEIKH INTERNATIONAL HOSPITAL',
+            subtitle: 'BMS, DDC, MCC, VSD',
+            color: col2,
+            ul: [
+                {
+                    strong: 'Location',
+                    span: 'Sharm El Sheikh'
+                },
+                {
+                    strong: 'Consultant',
+                    span: 'EDEC'
+                },
+            ]
+        }
+        ,
+        {
+            id: '2',
+            img: hospital,
+            title: 'SHARM EL SHEIKH INTERNATIONAL HOSPITAL',
+            subtitle: 'BMS, DDC, MCC, VSD',
+            color: col2,
+            ul: [
+                {
+                    strong: 'Location',
+                    span: 'Sharm El Sheikh'
+                },
+                {
+                    strong: 'Consultant',
+                    span: 'EDEC'
+                },
+            ]
         }
     ],
     Projectoutsideegypt: {

@@ -4,7 +4,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./Component/Nav/NavBar";
 import Footer from "./Component/Footer/Footer";
-
+// x = "true"
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",

@@ -7,6 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
 import AboutUsHome from "./Component/Abouthome/AboutUsHome";
 import { ArrowForward, ArrowForwardIosOutlined } from "@mui/icons-material";
+import Homeswiper from "./Component/swiper/Homeswiper";
 
 export default function Home() {
   const [typingStatus, setTypingStatus] = useState('Initializing');
@@ -68,9 +69,10 @@ export default function Home() {
         <div className="overlay"></div>
       </div>
       <AboutUsHome />
+      <Homeswiper />
       <Services />
       <MajorProjects />
-      <OutSideEgypt />
+      {/* <OutSideEgypt /> */}
     </div>
   );
 }

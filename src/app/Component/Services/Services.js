@@ -1,13 +1,14 @@
 'use client'
 import React from 'react'
-import { Container, Stack, Typography } from "@mui/material";
+import { Button, Container, Stack, Typography } from "@mui/material";
 import Grid from '@mui/material/Grid2';
+import { ArrowCircleRightSharp, ArrowRight, ArrowRightAlt, ArrowRightAltTwoTone, ArrowRightSharp } from '@mui/icons-material';
 function Services() {
     return (
         <div id="services">
             <Container>
                 <div style={{ paddingTop: '68px' }}>
-                    <Stack sx={{ textAlign: { xs: 'center', md: 'initial' } }}>
+                    <Stack sx={{ textAlign: { xs: 'center', md: 'center' } }}>
                         <h2 className="section-header">
                             SERVICES
                         </h2>
@@ -39,6 +40,10 @@ function Services() {
                                     certified panel builder up to 4,000 Amps.
                                 </span>
                             </Stack>
+                            <Button variant='text' sx={{ width: 'fit-content', color: '#B31319', fontWeight: 'bold' }}>
+                                Learn More
+                                <ArrowRightSharp />
+                            </Button>
                         </Grid>
 
 
@@ -68,6 +73,10 @@ function Services() {
                                     meets the expertise.
                                 </span>
                             </Stack>
+                            <Button variant='text' sx={{ width: 'fit-content', color: '#B31319', fontWeight: 'bold' }}>
+                                Learn More
+                                <ArrowRightSharp />
+                            </Button>
                         </Grid>
 
 
@@ -97,6 +106,10 @@ function Services() {
                                     Schneider Electric.
                                 </span>
                             </Stack>
+                            <Button variant='text' sx={{ width: 'fit-content', color: '#B31319', fontWeight: 'bold' }}>
+                                Learn More
+                                <ArrowRightSharp />
+                            </Button>
                         </Grid>
 
 
@@ -122,6 +135,10 @@ function Services() {
                                     Central Metering Platform
                                 </span>
                             </Stack>
+                            <Button variant='text' sx={{ width: 'fit-content', color: '#B31319', fontWeight: 'bold' }}>
+                                Learn More
+                                <ArrowRightSharp />
+                            </Button>
                         </Grid>
 
 
@@ -147,8 +164,19 @@ function Services() {
                                     Such as Control for DX-unit, Chillers & AHUs
                                 </span>
                             </Stack>
+                            <Button variant='text' sx={{ width: 'fit-content', color: '#B31319', fontWeight: 'bold' }}>
+                                Learn More
+                                <ArrowRightSharp />
+                            </Button>
                         </Grid>
+
+
                     </Grid>
+                    <Stack sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                        <Button variant='contained' sx={{ width: 'fit-content', backgroundColor: '#B31319', fontWeight: 'bold' }}>
+                            View All Services
+                        </Button>
+                    </Stack>
                 </div>
             </Container>
         </div>
