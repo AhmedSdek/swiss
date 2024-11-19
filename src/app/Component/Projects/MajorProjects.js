@@ -15,7 +15,7 @@ function MajorProjects() {
         <div >
             <Container>
                 <div id='majorprojects' style={{ paddingTop: '68px' }}>
-                    <Stack sx={{ justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+                    <Stack sx={{ justifyContent: 'center', alignItems: 'center', marginBottom: '20px', maxWidth: { xs: '99%', sm: '85%', md: '60%' }, margin: 'auto', textAlign: 'center' }}>
                         <h2 className="section-header">
                             Major Projects
                         </h2>
@@ -56,14 +56,14 @@ function MajorProjects() {
                         {Data.MajorProjects.map((project, index) => {
                             return (
                                 <SwiperSlide key={index}>
-                                    <Card sx={{ maxWidth: 345 }}>
+                                    <Card sx={{ maxWidth: 345, textAlign: 'start' }}>
                                         <CardMedia
                                             sx={{ height: 200 }}
                                             image={project.img.src}
                                             title={project.title}
                                         />
                                         <CardContent>
-                                            <Typography gutterBottom variant="h5" component="div">
+                                            <Typography sx={{ fontWeight: 'bold' }} gutterBottom variant="h5" component="div">
                                                 {project.title}
                                             </Typography>
                                             <Typography variant="body2" sx={{ color: 'text.secondary' }}>

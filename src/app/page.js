@@ -8,6 +8,8 @@ import { useState } from "react";
 import AboutUsHome from "./Component/Abouthome/AboutUsHome";
 import { ArrowForward, ArrowForwardIosOutlined } from "@mui/icons-material";
 import Homeswiper from "./Component/swiper/Homeswiper";
+import OurStatistics from "./Component/Our Statistics/OurStatistics";
+import Intro from "./Component/Intro/Intro";
 
 export default function Home() {
   const [typingStatus, setTypingStatus] = useState('Initializing');
@@ -72,6 +74,8 @@ export default function Home() {
       <Homeswiper />
       <Services />
       <MajorProjects />
+      <Intro />
+      {/* <OurStatistics /> */}
       {/* <OutSideEgypt /> */}
     </div>
   );
